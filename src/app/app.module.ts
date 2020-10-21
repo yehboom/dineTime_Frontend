@@ -7,7 +7,6 @@ import { ReservationComponent } from './reservation/reservation.component';
 import { FormsModule } from '@angular/forms';
 import { LoginComponent } from './login/login.component';
 import { SearchComponent } from './search/search.component';
-import { TestComponent } from './test/test.component';
 
 
 
@@ -18,7 +17,7 @@ import { TestComponent } from './test/test.component';
     ReservationComponent,
     LoginComponent,
     SearchComponent,
-    TestComponent
+
   ],
   imports: [
     BrowserModule,
