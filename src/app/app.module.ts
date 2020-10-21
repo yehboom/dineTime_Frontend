@@ -7,6 +7,7 @@ import { ReservationComponent } from './reservation/reservation.component';
 import { FormsModule } from '@angular/forms';
 import { LoginComponent } from './login/login.component';
 import { SearchComponent } from './search/search.component';
+import { ReservationListComponent } from './reservation-list/reservation-list.component';
 
 
 
@@ -17,6 +18,7 @@ import { SearchComponent } from './search/search.component';
     ReservationComponent,
     LoginComponent,
     SearchComponent,
+    ReservationListComponent,
 
   ],
   imports: [

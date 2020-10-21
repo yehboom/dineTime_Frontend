@@ -5,9 +5,9 @@
     <h5 class="card-title">Restaurant 01</h5>
 
     <div class="form-group">
-      <div class="text-light">
-      <label>Orgination Airport</label>
-    </div>
+      <!-- <div class="text-light">
+      <label>Time</label>
+    </div> -->
       <select class="form-control" name="major" [(ngModel)]="model.time">
         <option value="">Select an option</option>
         <option *ngFor="let time of Time" [value]="time">
@@ -18,7 +18,7 @@
   </div>
 
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Booking</a>
+    <a class="btn btn-primary" (click)="btnClick();">Booking</a>
   </div>
 </div>
 
@@ -26,7 +26,6 @@
   <img src="assets/images/img_bg_1.jpg" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Restaurant 02</h5>
-
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
     <a href="#" class="btn btn-primary">Booking</a>
   </div>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 export class selectRestaurant{
   public rDate: Date;
@@ -13,7 +14,7 @@ export class selectRestaurant{
 })
 export class SearchComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
     this.model.name="name";
@@ -26,4 +27,17 @@ export class SearchComponent implements OnInit {
     '17:00'
   ];
 
+
+
+  onSumbit(form): void{
+    // var numberValue = Number(this.model.travelers);
+    // this.result = numberValue * this.rate;
+
+    console.log(form.value);
+  }
+
+  btnClick(): void{
+
+    this.router.navigateByUrl('/reservationlist');
+  }
 }
