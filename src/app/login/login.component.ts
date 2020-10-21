@@ -55,13 +55,13 @@ export class LoginComponent implements OnInit {
   onSumbit(form): void{
     // var numberValue = Number(this.model.travelers);
     // this.result = numberValue * this.rate;
-
+    this.router.navigateByUrl('/reservation');
     console.log(form.value);
   }
 
-  btnClick= function () {
-    this.router.navigateByUrl('/reservation');
-};
+//   btnClick= function () {
+//     this.router.navigateByUrl('/reservation');
+// };
 
 
 }
