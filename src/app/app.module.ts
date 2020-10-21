@@ -8,6 +8,7 @@ import { FormsModule } from '@angular/forms';
 import { LoginComponent } from './login/login.component';
 import { SearchComponent } from './search/search.component';
 import { ReservationListComponent } from './reservation-list/reservation-list.component';
+import { AddTableComponent } from './add-table/add-table.component';
 
 
 
@@ -19,6 +20,7 @@ import { ReservationListComponent } from './reservation-list/reservation-list.co
     LoginComponent,
     SearchComponent,
     ReservationListComponent,
+    AddTableComponent,
 
   ],
   imports: [

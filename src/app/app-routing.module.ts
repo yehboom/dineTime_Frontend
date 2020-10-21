@@ -1,3 +1,4 @@
+import { AddTableComponent } from './add-table/add-table.component';
 import { ReservationListComponent } from './reservation-list/reservation-list.component';
 import { SearchComponent } from './search/search.component';
 import { LoginComponent } from './login/login.component';
@@ -16,7 +17,8 @@ const routes: Routes = [
   { path: 'reservation', component: ReservationComponent },
   { path: 'login',component: LoginComponent},
   { path: 'search', component: SearchComponent },
-  { path: 'reservationlist', component: ReservationListComponent }
+  { path: 'reservationlist', component: ReservationListComponent },
+  { path: 'addtable',component: AddTableComponent}
   ]
 
 
