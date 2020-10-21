@@ -1,3 +1,4 @@
+import { SearchComponent } from './search/search.component';
 import { LoginComponent } from './login/login.component';
 import { NgModule, Component } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
@@ -12,7 +13,8 @@ import { ReservationComponent } from './reservation/reservation.component';
 
 const routes: Routes = [
   { path: 'reservation', component: ReservationComponent },
-  { path: 'login',component: LoginComponent}
+  { path: 'login',component: LoginComponent},
+  { path: 'search', component: SearchComponent }
   ]
 
 
