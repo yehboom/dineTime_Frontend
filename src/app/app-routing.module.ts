@@ -1,3 +1,4 @@
+import { LoginBusinessComponent } from './login-business/login-business.component';
 import { tablelist, TableListComponent } from './table-list/table-list.component';
 import { AddTableComponent } from './add-table/add-table.component';
 import { ReservationListComponent } from './reservation-list/reservation-list.component';
@@ -20,7 +21,8 @@ const routes: Routes = [
   { path: 'search', component: SearchComponent },
   { path: 'reservationlist', component: ReservationListComponent },
   { path: 'addtable',component: AddTableComponent},
-  { path: 'tablelist' ,component: TableListComponent}
+  { path: 'tablelist' ,component: TableListComponent},
+  { path: 'loginb', component: LoginBusinessComponent}
   ]
 
 

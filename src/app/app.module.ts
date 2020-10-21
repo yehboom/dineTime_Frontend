@@ -10,6 +10,8 @@ import { SearchComponent } from './search/search.component';
 import { ReservationListComponent } from './reservation-list/reservation-list.component';
 import { AddTableComponent } from './add-table/add-table.component';
 import { TableListComponent } from './table-list/table-list.component';
+import { FirstComponentComponent } from './first-component/first-component.component';
+import { LoginBusinessComponent } from './login-business/login-business.component';
 
 
 
@@ -23,6 +25,8 @@ import { TableListComponent } from './table-list/table-list.component';
     ReservationListComponent,
     AddTableComponent,
     TableListComponent,
+    FirstComponentComponent,
+    LoginBusinessComponent,
 
   ],
   imports: [

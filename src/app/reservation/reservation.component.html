@@ -9,7 +9,7 @@
 
         <div class="row row-mt-15em">
           <div class="col-md-7 mt-text animate-box" data-animate-effect="fadeInUp">
-            <h1 class="cursive-font">All in good taste!</h1>
+            <h1 class="cursive-font text-light" >All in good taste!</h1>
           </div>
           <form #myForm="ngForm" (ngSubmit)="myForm.form.valid && onSumbit(myForm)">
           <div class="col-md-push-1 animate-box" data-animate-effect="fadeInRight">
@@ -18,11 +18,11 @@
 
                 <div class="tab-content">
                   <div class="tab-content-inner active" data-content="signup">
-                    <h3 class="cursive-font">Table Reservation</h3>
+                    <h3 class="cursive-font text-light">Table Reservation</h3>
                     <form action="#">
                       <div class="row form-group">
-                        <div class="col-md-12">
-                          <label for="activities">Persons</label>
+                        <div class="col-md-12 text-light">
+                          <label for="activities ">Persons</label>
                           <select name="#" id="activities" class="form-control">
                             <option value="">Persons</option>
                             <option value="">1</option>
@@ -35,7 +35,7 @@
                       </div>
 
                       <div class="row form-group">
-                        <div class="col-md-12">
+                        <div class="col-md-12 text-light">
                           <label for="date-start">Date</label>
                           <!-- <input type="text" id="date" class="form-control"> -->
                           <input type="date" class="form-control" name="date" [(ngModel)]="model.rDate">
