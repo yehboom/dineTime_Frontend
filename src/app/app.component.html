@@ -1,5 +1,11 @@
 <h2>Welcome {{title}}</h2>
-<p>OS:  your operating system, if using Windows, whether you are using WSL
+
+<nav>
+  <a routerLink="/">Go To Home</a><br>
+  <a routerLink="/reservation">reservation</a><br>
+  <a routerLink="/login">login</a><br>
+</nav>
+<router-outlet></router-outlet>
 <!--
   <app-reservation></app-reservation> -->
-  <app-login></app-login>
+  <!-- <app-login></app-login> -->

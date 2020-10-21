@@ -15,7 +15,7 @@
     <div class="text-light">
     <label>Account</label>
   </div>
-    <input type="string" name="travelers" class="form-control" [(ngModel)]="model.travelers "
+    <input type="string" name="travelers" class="form-control" [(ngModel)]="model.account "
       #name="ngModel" [ngClass]="{ 'is-invalid': myForm.submitted && name.invalid }" required >
 
     <div *ngIf="myForm.submitted && name.invalid" class="invalid-feedback">
@@ -25,70 +25,35 @@
   </div>
 </div>
 
-<form #myForm="ngForm" (ngSubmit)="myForm.form.valid && onSumbit(myForm)">
-  <div class="row bg-info justify-content-center
-  align-items-center" style="height:80px">
-    <div class="form-group col-md-4 mb-3">
-      <div class="text-light">
-      <label> Date</label>
-    </div>
-      <input type="date" class="form-control" name="travelDate" [(ngModel)]="model.travelDate">
-    </div>
-  </div>
-
-  <div class="row bg-info justify-content-center
-  align-items-center" style="height:80px">
-  <div class="form-group col-md-4 mb-3">
-    <div class="text-light">
-    <label>temp</label>
-  </div>
-    <select class="form-control" name="major" [(ngModel)]="model.orginationAirport">
-      <option value="">Select an option</option>
-      <option *ngFor="let orginationAirport of Orgination" [value]="orginationAirport">
-        {{orginationAirport}}
-      </option>
-    </select>
-  </div>
-</div>
 
 <div class="row bg-info justify-content-center
   align-items-center" style="height:80px">
   <div class="form-group col-md-4 mb-3">
     <div class="text-light">
-    <label>temp</label>
+      <label>Password</label>
+    </div>
+      <input type="string" name="travelers" class="form-control" [(ngModel)]="model.password "
+        #name="ngModel" [ngClass]="{ 'is-invalid': myForm.submitted && name.invalid }" required >
+
+      <div *ngIf="myForm.submitted && name.invalid" class="invalid-feedback">
+
+        <p *ngIf="name.errors.required">Password is required</p>
+      </div>
+    </div>
+
   </div>
-    <select class="form-control" name="major" [(ngModel)]="model.destinationAirport">
-      <option value="">Select an option</option>
-      <option *ngFor="let destinationAirport of Destination" [value]="destinationAirport">
-        {{destinationAirport}}
-      </option>
-    </select>
-  </div>
-</div>
 
 
 
 <div class="row bg-info justify-content-center
   align-items-center" style="height:80px">
   <div class="form-group col-md-4 mb-3">
-    <button class="btn btn-primary btn-block">Submit</button>
+
+    <button class="btn btn-primary btn-block" (click)="btnClick();">Submit</button>
 
   </div>
 </div><br>
 
-
-  <div class="col-9 text-dark h4">
-    <label>temp</label>
-    </div>
-  <div class="form-group col-md-4 mb-3 text-dark h5">
-    {{ model.travelDate | date:"MM/dd/yy"}}
-  </div><br>
-
-
-  <div class="col-9 text-dark h4">
-<label>temp</label>
-</div>
-<div class="col-9 text-dark h5">{{result}}</div>
 
 
 </form>
