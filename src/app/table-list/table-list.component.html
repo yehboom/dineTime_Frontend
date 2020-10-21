@@ -1,0 +1,44 @@
+
+
+<div class="col-10">
+  <label for="date-start">Date</label>
+  <div class="row">
+  <div class="col-6">
+  <form #myForm="ngForm" (ngSubmit)="myForm.form.valid && onSumbit(myForm)">
+
+        <input type="date" class="form-control" name="date" [(ngModel)]="model.rDate">
+  </form>
+  </div>
+
+  <div class="col-2">
+  <a class="btn btn-primary" >Search Table</a>
+  </div>
+  </div>
+<br>
+<div class="list-group">
+  <a href="#" class="list-group-item list-group-item-action">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">Table 001</h5>
+      <small>cancel</small>
+    </div>
+    <p class="mb-1">(2020/10/01--17:00)    Persons: 3</p>
+    <small>Reservation id: QWE309890</small>
+  </a>
+
+  <a href="#" class="list-group-item list-group-item-action">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">Table 002</h5>
+      <small class="text-muted">cancel</small>
+    </div>
+    <p class="mb-1">(2020/10/30--12:00)    Persons: 2</p>
+    <small class="text-muted">Reservation id: KHD9890</small>
+  </a>
+  <a href="#" class="list-group-item list-group-item-action">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">Table 003</h5>
+      <small class="text-muted">cancel</small>
+    </div>
+    <p class="mb-1">(2020/11/05--18:00)    Persons: 4</p>
+    <small class="text-muted">Reservation id: FWSD48290</small>
+  </a>
+</div>

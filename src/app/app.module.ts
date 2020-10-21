@@ -9,6 +9,7 @@ import { LoginComponent } from './login/login.component';
 import { SearchComponent } from './search/search.component';
 import { ReservationListComponent } from './reservation-list/reservation-list.component';
 import { AddTableComponent } from './add-table/add-table.component';
+import { TableListComponent } from './table-list/table-list.component';
 
 
 
@@ -21,6 +22,7 @@ import { AddTableComponent } from './add-table/add-table.component';
     SearchComponent,
     ReservationListComponent,
     AddTableComponent,
+    TableListComponent,
 
   ],
   imports: [

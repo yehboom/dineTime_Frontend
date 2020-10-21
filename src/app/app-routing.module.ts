@@ -1,3 +1,4 @@
+import { tablelist, TableListComponent } from './table-list/table-list.component';
 import { AddTableComponent } from './add-table/add-table.component';
 import { ReservationListComponent } from './reservation-list/reservation-list.component';
 import { SearchComponent } from './search/search.component';
@@ -18,7 +19,8 @@ const routes: Routes = [
   { path: 'login',component: LoginComponent},
   { path: 'search', component: SearchComponent },
   { path: 'reservationlist', component: ReservationListComponent },
-  { path: 'addtable',component: AddTableComponent}
+  { path: 'addtable',component: AddTableComponent},
+  { path: 'tablelist' ,component: TableListComponent}
   ]
 
 
